@@ -1,7 +1,7 @@
 using System;
 using Microsoft.EntityFrameworkCore;
 
-namespace Blog
+namespace BlogData
 {
     public class BlogDataContext : DbContext
     {
