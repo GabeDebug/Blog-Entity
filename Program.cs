@@ -1,0 +1,9 @@
+﻿using System;
+
+namespace Blog
+{
+    class Program
+    {
+        static void Main() { }
+    }
+}
