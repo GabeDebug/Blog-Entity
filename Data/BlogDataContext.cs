@@ -1,5 +1,5 @@
+using System;
 using Microsoft.EntityFrameworkCore;
-using system;
 
 namespace Blog
 {
@@ -11,10 +11,10 @@ namespace Blog
         public Dbset<Tag> Tags { get; set; }
         public Dbset<User> Users { get; set; }
         public Dbset<UserRole> UserRoles { get; set; }
-      
-        protectd override void ONConfiguring(DbContextOptionsBuilder optionsBuilder)
+
+        protected override void ONConfiguring(DbContextOptionsBuilder option)
         {
-            optionsBuilder.UseSqlite("Data Source=blog.db");
+            option.UseSqlite("Data Source=blog.db");
         }
     }
 }
